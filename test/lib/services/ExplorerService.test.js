@@ -21,7 +21,7 @@ describe("General tests for ExplorerService class", () => {
     test("3. Getting explorers username by mission", () => {
         const explorers = Reader.readJsonFile("./app/explorers.json");
         const node = eService.getExplorersUsernamesByMission(explorers, "node")
-        const java = eService.getExplorersUsernamesByMission(explorers, "jav")
+        const java = eService.getExplorersUsernamesByMission(explorers, "java")
 
         let num = node.length
         let num2 = java.length
